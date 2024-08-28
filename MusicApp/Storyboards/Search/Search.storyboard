@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="QuH-2e-JUX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0cN-94-wA0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="agN-Zm-0S1">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="YDn-fD-lGh" kind="relationship" relationship="rootViewController" id="4eZ-JI-pmS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qzt-8N-zp8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1594" y="83"/>
+        </scene>
+        <!--Play Youtube Video-->
+        <scene sceneID="1JV-61-BIb">
+            <objects>
+                <viewController storyboardIdentifier="PlayYoutubeVideo" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YDn-fD-lGh" customClass="PlayYoutubeVideo" customModule="MusicApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bg6-Nf-9PL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cHQ-DR-rgp">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="6j2-Be-b1m">
+                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="cHQ-DR-rgp" firstAttribute="leading" secondItem="Xrs-YM-bEE" secondAttribute="leading" id="GGy-DN-7Hq"/>
+                            <constraint firstAttribute="trailing" secondItem="cHQ-DR-rgp" secondAttribute="trailing" id="Jfw-GP-dSh"/>
+                            <constraint firstItem="cHQ-DR-rgp" firstAttribute="top" secondItem="Xrs-YM-bEE" secondAttribute="top" id="UuJ-8q-j7Q"/>
+                            <constraint firstAttribute="bottom" secondItem="cHQ-DR-rgp" secondAttribute="bottom" id="iMm-pI-WKV"/>
+                            <constraint firstItem="6j2-Be-b1m" firstAttribute="centerY" secondItem="Bg6-Nf-9PL" secondAttribute="centerY" id="oVT-9w-JDg"/>
+                            <constraint firstItem="6j2-Be-b1m" firstAttribute="centerX" secondItem="Bg6-Nf-9PL" secondAttribute="centerX" id="tRT-CA-TSa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Xrs-YM-bEE"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="HXl-ay-Um4">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="Qd8-tE-nzM">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="nUk-8F-GK8" customClass="ActionButton" customModule="MusicApp" customModuleProvider="target">
+                                <rect key="frame" x="20" y="11" width="167.5" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="   Youtube Player" image="arrow.left" catalog="system">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="activityIndicator" destination="6j2-Be-b1m" id="5Xv-uG-RRd"/>
+                        <outlet property="backButton" destination="nUk-8F-GK8" id="rtg-fK-Hy4"/>
+                        <outlet property="webView" destination="cHQ-DR-rgp" id="9kW-9b-MYT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7kh-aM-CTc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2306" y="81"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.left" catalog="system" width="64" height="48"/>
+    </resources>
+</document>

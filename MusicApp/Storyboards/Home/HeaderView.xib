@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HeaderView" customModule="MusicApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genres" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iU8-0W-Ogn">
+                    <rect key="frame" x="24" y="12" width="62" height="22"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Explore by genre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LYI-9b-yMT">
+                    <rect key="frame" x="24" y="36" width="115" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.59943664073944092" green="0.60169988870620728" blue="0.6251409649848938" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="meu-U3-cUK">
+                    <rect key="frame" x="276" y="12" width="130" height="40"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="8gS-fy-Y0z">
+                            <rect key="frame" x="105" y="10" width="24" height="20.5"/>
+                            <color key="tintColor" red="0.59943664070000002" green="0.60169988870000002" blue="0.62514096500000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="24" id="UcS-S5-Ph2"/>
+                                <constraint firstAttribute="height" constant="24" id="jN3-q2-oM8"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View All" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5cN-nH-h0B">
+                            <rect key="frame" x="45" y="9.5" width="61" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.59943664070000002" green="0.60169988870000002" blue="0.62514096500000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VpW-4Q-MnW" customClass="ActionButton" customModule="MusicApp" customModuleProvider="target">
+                            <rect key="frame" x="10" y="0.0" width="120" height="40"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="VpW-4Q-MnW" secondAttribute="bottom" id="87x-fR-OAk"/>
+                        <constraint firstItem="5cN-nH-h0B" firstAttribute="centerY" secondItem="meu-U3-cUK" secondAttribute="centerY" id="At1-bh-1RV"/>
+                        <constraint firstItem="8gS-fy-Y0z" firstAttribute="centerY" secondItem="meu-U3-cUK" secondAttribute="centerY" id="FXY-WW-c0z"/>
+                        <constraint firstItem="VpW-4Q-MnW" firstAttribute="top" secondItem="meu-U3-cUK" secondAttribute="top" id="HkI-uj-N6C"/>
+                        <constraint firstItem="VpW-4Q-MnW" firstAttribute="leading" secondItem="meu-U3-cUK" secondAttribute="leading" constant="10" id="M4q-ke-FdX"/>
+                        <constraint firstAttribute="trailing" secondItem="8gS-fy-Y0z" secondAttribute="trailing" constant="1" id="YPM-wr-N73"/>
+                        <constraint firstItem="8gS-fy-Y0z" firstAttribute="leading" secondItem="5cN-nH-h0B" secondAttribute="trailing" constant="-1" id="ar7-nS-cTW"/>
+                        <constraint firstAttribute="trailing" secondItem="VpW-4Q-MnW" secondAttribute="trailing" id="cb6-HJ-ZqC"/>
+                        <constraint firstAttribute="width" constant="130" id="qpc-tJ-Jbv"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="LYI-9b-yMT" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="24" id="3kW-6M-pbW"/>
+                <constraint firstItem="meu-U3-cUK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="12" id="4k7-B3-M30"/>
+                <constraint firstItem="iU8-0W-Ogn" firstAttribute="centerY" secondItem="VpW-4Q-MnW" secondAttribute="centerY" constant="-9" id="BXS-Ux-JVx"/>
+                <constraint firstItem="LYI-9b-yMT" firstAttribute="top" secondItem="iU8-0W-Ogn" secondAttribute="bottom" constant="2" id="HH9-Lu-kxC"/>
+                <constraint firstItem="iU8-0W-Ogn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="24" id="R7z-Bz-x0m"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="meu-U3-cUK" secondAttribute="trailing" constant="8" id="hWy-Tp-E67"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="meu-U3-cUK" secondAttribute="bottom" constant="12" id="zAd-vj-y3F"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="banerHeaderTitle" destination="iU8-0W-Ogn" id="oD9-GE-b6t"/>
+                <outlet property="centerConstraint" destination="BXS-Ux-JVx" id="Zwi-de-jSq"/>
+                <outlet property="seeAllAction" destination="VpW-4Q-MnW" id="JFl-of-tSL"/>
+                <outlet property="subTitle" destination="LYI-9b-yMT" id="GGk-ic-AOV"/>
+                <outlet property="viewAll" destination="meu-U3-cUK" id="k4R-zL-EJM"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="-150.66964285714286"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chevron.right" catalog="system" width="48" height="64"/>
+    </resources>
+</document>

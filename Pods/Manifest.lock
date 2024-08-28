@@ -1,0 +1,79 @@
+PODS:
+  - AppAuth (1.4.0):
+    - AppAuth/Core (= 1.4.0)
+    - AppAuth/ExternalUserAgent (= 1.4.0)
+  - AppAuth/Core (1.4.0)
+  - AppAuth/ExternalUserAgent (1.4.0)
+  - DTTextField (0.4.0)
+  - FBSDKCoreKit (7.1.1):
+    - FBSDKCoreKit/Basics (= 7.1.1)
+    - FBSDKCoreKit/Core (= 7.1.1)
+  - FBSDKCoreKit/Basics (7.1.1)
+  - FBSDKCoreKit/Core (7.1.1):
+    - FBSDKCoreKit/Basics
+  - FBSDKLoginKit (7.1.1):
+    - FBSDKLoginKit/Login (= 7.1.1)
+  - FBSDKLoginKit/Login (7.1.1):
+    - FBSDKCoreKit (~> 7.1.1)
+  - GoogleSignIn (5.0.2):
+    - AppAuth (~> 1.2)
+    - GTMAppAuth (~> 1.0)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - GTMAppAuth (1.0.0):
+    - AppAuth/Core (~> 1.0)
+    - GTMSessionFetcher (~> 1.1)
+  - GTMSessionFetcher (1.4.0):
+    - GTMSessionFetcher/Full (= 1.4.0)
+  - GTMSessionFetcher/Core (1.4.0)
+  - GTMSessionFetcher/Full (1.4.0):
+    - GTMSessionFetcher/Core (= 1.4.0)
+  - HCVimeoVideoExtractor (0.0.1)
+  - SDWebImage (5.7.2):
+    - SDWebImage/Core (= 5.7.2)
+  - SDWebImage/Core (5.7.2)
+  - SwiftAudio (0.11.2)
+  - youtube-ios-player-helper (1.0.2)
+  - YoutubePlayer-in-WKWebView (0.3.4)
+
+DEPENDENCIES:
+  - DTTextField
+  - FBSDKLoginKit
+  - GoogleSignIn
+  - HCVimeoVideoExtractor
+  - SDWebImage
+  - SwiftAudio
+  - youtube-ios-player-helper
+  - YoutubePlayer-in-WKWebView
+
+SPEC REPOS:
+  trunk:
+    - AppAuth
+    - DTTextField
+    - FBSDKCoreKit
+    - FBSDKLoginKit
+    - GoogleSignIn
+    - GTMAppAuth
+    - GTMSessionFetcher
+    - HCVimeoVideoExtractor
+    - SDWebImage
+    - SwiftAudio
+    - youtube-ios-player-helper
+    - YoutubePlayer-in-WKWebView
+
+SPEC CHECKSUMS:
+  AppAuth: 31bcec809a638d7bd2f86ea8a52bd45f6e81e7c7
+  DTTextField: 4b9bab01faec50a98d42d24ba39ed122461f866f
+  FBSDKCoreKit: b46507dc8b8cefed31d644e74d7cc30e2a715ef8
+  FBSDKLoginKit: 1a61d79e2b25e2fc0d03dccab1e34b38bbdf2546
+  GoogleSignIn: 7137d297ddc022a7e0aa4619c86d72c909fa7213
+  GTMAppAuth: 4deac854479704f348309e7b66189e604cf5e01e
+  GTMSessionFetcher: 6f5c8abbab8a9bce4bb3f057e317728ec6182b10
+  HCVimeoVideoExtractor: d3c251280f7027ffd324266e1930b3618e0adb46
+  SDWebImage: d9ea4959d99c52276dfada481987018fcaea3d58
+  SwiftAudio: 217f5f184b27a0e25ff0fe7647021f05a21c06c9
+  youtube-ios-player-helper: 40b96e52c22445f0fdc43731cefa32c67075ff81
+  YoutubePlayer-in-WKWebView: af2f5929fc78882d94bfdfeea999b661b78d9717
+
+PODFILE CHECKSUM: e4af90653336ea351cb4eb6f49e7172c6488cff6
+
+COCOAPODS: 1.9.3

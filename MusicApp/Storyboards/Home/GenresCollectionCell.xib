@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GenresCollectionCell" id="gTV-IL-0wX" customClass="GenresCollectionCell" customModule="MusicApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="164" height="72"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="164" height="72"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mrl-rC-a1k">
+                        <rect key="frame" x="0.0" y="0.0" width="164" height="72"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg2" translatesAutoresizingMaskIntoConstraints="NO" id="ogQ-hm-BGS" customClass="DesignableImageView" customModule="MusicApp" customModuleProvider="target">
+                                <rect key="frame" x="8" y="8" width="148" height="56"/>
+                                <color key="backgroundColor" red="0.58039215690000001" green="0.066666666669999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Songs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yIl-uu-pgB">
+                                <rect key="frame" x="98" y="38.5" width="48.5" height="19.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yIl-uu-pgB" firstAttribute="centerX" secondItem="Mrl-rC-a1k" secondAttribute="centerX" constant="40" id="0QR-yi-FWP"/>
+                            <constraint firstAttribute="trailing" secondItem="ogQ-hm-BGS" secondAttribute="trailing" constant="8" id="0bD-2P-0Gb"/>
+                            <constraint firstAttribute="bottom" secondItem="ogQ-hm-BGS" secondAttribute="bottom" constant="8" id="DFs-f5-vHw"/>
+                            <constraint firstItem="yIl-uu-pgB" firstAttribute="centerY" secondItem="Mrl-rC-a1k" secondAttribute="centerY" constant="12" id="G70-66-fuZ"/>
+                            <constraint firstItem="ogQ-hm-BGS" firstAttribute="leading" secondItem="Mrl-rC-a1k" secondAttribute="leading" constant="8" id="QVY-3w-INf"/>
+                            <constraint firstItem="ogQ-hm-BGS" firstAttribute="top" secondItem="Mrl-rC-a1k" secondAttribute="top" constant="8" id="RuC-w2-Qun"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Mrl-rC-a1k" secondAttribute="bottom" id="40U-Bp-v0D"/>
+                <constraint firstItem="Mrl-rC-a1k" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="8VR-x3-0rF"/>
+                <constraint firstAttribute="trailing" secondItem="Mrl-rC-a1k" secondAttribute="trailing" id="kzb-Zc-9Kz"/>
+                <constraint firstItem="Mrl-rC-a1k" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="p8r-qb-dhE"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="164" height="72"/>
+            <connections>
+                <outlet property="banerImage" destination="ogQ-hm-BGS" id="dFX-DK-kCR"/>
+                <outlet property="banerTitle" destination="yIl-uu-pgB" id="fxs-KQ-KNh"/>
+                <outlet property="titleXConstraint" destination="0QR-yi-FWP" id="adQ-sI-hAi"/>
+                <outlet property="titleYConstraint" destination="G70-66-fuZ" id="WDx-7a-KZh"/>
+            </connections>
+            <point key="canvasLocation" x="220.28985507246378" y="135.26785714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="bg2" width="114" height="64"/>
+    </resources>
+</document>

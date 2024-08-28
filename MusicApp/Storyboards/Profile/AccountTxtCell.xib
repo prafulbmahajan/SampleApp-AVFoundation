@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="AccountTxtCell" customModule="MusicApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="54"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="54"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ERz-HD-GSP" customClass="DTTextField" customModule="DTTextField">
+                        <rect key="frame" x="24" y="8" width="366" height="38"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1C6-kL-8Wq">
+                        <rect key="frame" x="24" y="48.5" width="366" height="0.5"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="PmR-5o-zg6"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="1C6-kL-8Wq" secondAttribute="bottom" constant="5" id="61J-VM-ZdH"/>
+                    <constraint firstAttribute="bottom" secondItem="ERz-HD-GSP" secondAttribute="bottom" constant="8" id="JJr-z9-Yin"/>
+                    <constraint firstItem="ERz-HD-GSP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="KaP-ps-31Y"/>
+                    <constraint firstAttribute="trailing" secondItem="1C6-kL-8Wq" secondAttribute="trailing" constant="24" id="Oxo-Hq-VxT"/>
+                    <constraint firstItem="1C6-kL-8Wq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="k38-Uc-fpf"/>
+                    <constraint firstItem="ERz-HD-GSP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="siu-V6-rNn"/>
+                    <constraint firstAttribute="trailing" secondItem="ERz-HD-GSP" secondAttribute="trailing" constant="24" id="xgF-4d-nac"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="txtField" destination="ERz-HD-GSP" id="L8l-dN-dKJ"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="128"/>
+        </tableViewCell>
+    </objects>
+</document>

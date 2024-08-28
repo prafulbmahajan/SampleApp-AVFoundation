@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="CreatePlaylistView" id="pGl-9d-vol" customClass="CreatePlaylistView" customModule="MusicApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QAe-a9-bT1" customClass="ActionButton" customModule="MusicApp" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <state key="normal" title="Button"/>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QN6-pV-bHI">
+                    <rect key="frame" x="57" y="358" width="300" height="180"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="black" translatesAutoresizingMaskIntoConstraints="NO" id="JsV-gM-rRq">
+                            <rect key="frame" x="0.0" y="0.0" width="300" height="180"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create new playlist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pZY-4y-uKW">
+                            <rect key="frame" x="79.5" y="8" width="141" height="19.5"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="trE-SV-CVx">
+                            <rect key="frame" x="12" y="140" width="276" height="32"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LGF-fo-UJe" customClass="ActionButton" customModule="MusicApp" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="130" height="32"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                    <state key="normal" title="CANCEL">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DmK-NJ-u1a" customClass="ActionButton" customModule="MusicApp" customModuleProvider="target">
+                                    <rect key="frame" x="146" y="0.0" width="130" height="32"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                    <state key="normal" title="CREATE">
+                                        <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="CSw-J5-o5f"/>
+                            </constraints>
+                        </stackView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oXS-fB-uUy">
+                            <rect key="frame" x="12" y="63.5" width="276" height="42"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KD5-27-Fta">
+                                    <rect key="frame" x="1" y="1" width="274" height="40"/>
+                                    <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C0W-7i-FME">
+                                    <rect key="frame" x="0.0" y="41" width="276" height="1"/>
+                                    <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="eDa-IB-dzv"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="C0W-7i-FME" secondAttribute="bottom" id="3FJ-OM-4fY"/>
+                                <constraint firstItem="KD5-27-Fta" firstAttribute="leading" secondItem="oXS-fB-uUy" secondAttribute="leading" constant="1" id="9jL-Pz-Gmr"/>
+                                <constraint firstAttribute="height" constant="42" id="EDq-3W-iiZ"/>
+                                <constraint firstItem="C0W-7i-FME" firstAttribute="leading" secondItem="oXS-fB-uUy" secondAttribute="leading" id="KvY-eF-kzd"/>
+                                <constraint firstAttribute="trailing" secondItem="C0W-7i-FME" secondAttribute="trailing" id="d11-wt-gWZ"/>
+                                <constraint firstAttribute="bottom" secondItem="KD5-27-Fta" secondAttribute="bottom" constant="1" id="ehS-wn-pTb"/>
+                                <constraint firstAttribute="trailing" secondItem="KD5-27-Fta" secondAttribute="trailing" constant="1" id="mCt-um-SZr"/>
+                                <constraint firstItem="KD5-27-Fta" firstAttribute="top" secondItem="oXS-fB-uUy" secondAttribute="top" constant="1" id="sKJ-ik-boC"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="180" id="45M-af-qEb"/>
+                        <constraint firstItem="trE-SV-CVx" firstAttribute="leading" secondItem="QN6-pV-bHI" secondAttribute="leading" constant="12" id="5h5-WI-017"/>
+                        <constraint firstItem="oXS-fB-uUy" firstAttribute="leading" secondItem="QN6-pV-bHI" secondAttribute="leading" constant="12" id="ApY-1d-1bU"/>
+                        <constraint firstAttribute="trailing" secondItem="JsV-gM-rRq" secondAttribute="trailing" id="Frc-0Y-VLO"/>
+                        <constraint firstItem="pZY-4y-uKW" firstAttribute="centerX" secondItem="QN6-pV-bHI" secondAttribute="centerX" id="JVz-wh-VGR"/>
+                        <constraint firstAttribute="trailing" secondItem="trE-SV-CVx" secondAttribute="trailing" constant="12" id="KFF-I5-f3B"/>
+                        <constraint firstItem="JsV-gM-rRq" firstAttribute="leading" secondItem="QN6-pV-bHI" secondAttribute="leading" id="Uxo-vt-VcF"/>
+                        <constraint firstItem="JsV-gM-rRq" firstAttribute="top" secondItem="QN6-pV-bHI" secondAttribute="top" id="doZ-hD-ezX"/>
+                        <constraint firstAttribute="bottom" secondItem="trE-SV-CVx" secondAttribute="bottom" constant="8" id="eQY-nn-6Jd"/>
+                        <constraint firstAttribute="bottom" secondItem="JsV-gM-rRq" secondAttribute="bottom" id="oOl-n6-odj"/>
+                        <constraint firstAttribute="trailing" secondItem="oXS-fB-uUy" secondAttribute="trailing" constant="12" id="r6a-eb-6nh"/>
+                        <constraint firstItem="oXS-fB-uUy" firstAttribute="top" secondItem="pZY-4y-uKW" secondAttribute="bottom" constant="36" id="t3f-d6-Yfv"/>
+                        <constraint firstItem="pZY-4y-uKW" firstAttribute="top" secondItem="QN6-pV-bHI" secondAttribute="top" constant="8" id="wCD-53-9D2"/>
+                        <constraint firstAttribute="width" constant="300" id="zw8-2b-HEB"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="QAe-a9-bT1" firstAttribute="top" secondItem="pGl-9d-vol" secondAttribute="top" id="DQJ-Jh-kF3"/>
+                <constraint firstItem="QN6-pV-bHI" firstAttribute="centerY" secondItem="pGl-9d-vol" secondAttribute="centerY" id="Ocz-M3-LuE"/>
+                <constraint firstItem="QAe-a9-bT1" firstAttribute="leading" secondItem="VBT-dn-djr" secondAttribute="leading" id="PTJ-Z3-dzv"/>
+                <constraint firstAttribute="bottom" secondItem="QAe-a9-bT1" secondAttribute="bottom" id="YM4-0z-SB5"/>
+                <constraint firstItem="QN6-pV-bHI" firstAttribute="centerX" secondItem="pGl-9d-vol" secondAttribute="centerX" id="frq-EY-2oJ"/>
+                <constraint firstItem="VBT-dn-djr" firstAttribute="trailing" secondItem="QAe-a9-bT1" secondAttribute="trailing" id="gng-uy-52c"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="VBT-dn-djr"/>
+            <connections>
+                <outlet property="cancelAction" destination="LGF-fo-UJe" id="Ql1-T6-UbE"/>
+                <outlet property="createAction" destination="DmK-NJ-u1a" id="OKw-qN-NPw"/>
+                <outlet property="dismissAction" destination="QAe-a9-bT1" id="3ff-3m-UoC"/>
+                <outlet property="txtField" destination="KD5-27-Fta" id="IXR-QR-ea3"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="127.90178571428571"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="black" width="311" height="843"/>
+    </resources>
+</document>
